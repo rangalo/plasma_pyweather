@@ -1,0 +1,18 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Plasma PyWeather
+Name[nl]=Plasma PyWeather
+Type=Service
+ServiceTypes=Plasma/Applet
+Icon=chronometer
+X-Plasma-API=python
+X-Plasma-MainScript=code/main.py
+X-KDE-PluginInfo-Author=Hardik Mehta
+X-KDE-PluginInfo-Email=hard.mehta@gmail.com
+X-KDE-PluginInfo-Name=plasma-pyweather
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=http://hardikmehta.wordpress.com
+X-KDE-PluginInfo-Category=Weather
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
