@@ -7,17 +7,22 @@
 #
 ########################################################
 
-import sys
+import sys, urllib
 from xml.dom import minidom, Node
 
 class WeatherInfo:
-    def __init__(self):
+    def __init__(self,location="Munich,Germany"):
+
+        self.url = "http://www.google.com/ig/api?weather=" + location
+
         self.general = {"location": "N/A", "unit":"SI","city":"N/A"}
         self.current_condition = {"condition":"N/A","temp_c":"N/A","humidity":"N/A","wind_condition":"N/A"}
         self.forecast_conditions = [{"day_of_week":"N/A","low":"N/A","high":"N/A","condition":"N/A"}]    
 
     def parse(self):
-        doc = minidom.parse("../weatherInfo.xml")
+        print self.url
+        sock = urllib.urlopen(self.url)
+        doc = minidom.parse(sock)
         nodes = doc.getElementsByTagName("forecast_information")
 
         # fetch general info
