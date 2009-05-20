@@ -34,8 +34,6 @@ class WeatherInfo:
             self.general["city"] = (node.getElementsByTagName("city")[0]).getAttribute("data")
         
         # fetch current conditions
-        #self.current_condition["condition"] = (node.getElementsBytagname("current_conditions")).getattribute("data")
-        #self.current_condition["tempcondition"] = (node.getElementsByTagName("current_conditions")).getAttribute("data")
         nodes = doc.getElementsByTagName("current_conditions")
         if len(nodes) <> 0:
             node = nodes[0]
