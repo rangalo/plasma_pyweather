@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="sunny.svgz">../images/sunny.svgz</file>
+    </qresource>
+</RCC>
