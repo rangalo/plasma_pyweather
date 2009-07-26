@@ -1,5 +1,9 @@
 <RCC>
-    <qresource prefix="/">
+    <qresource prefix="/images">
         <file alias="sunny.svgz">../images/sunny.svgz</file>
+        <file alias="showers.svgz">../images/showers.svgz</file>
+        <file alias="not-available.svgz">../images/not-available.svgz</file>
+        <file alias="cloudy.svgz">../images/cloudy.svgz</file>
+        <file alias="thunderstorms.svgz">../images/thunderstorms.svgz</file>
     </qresource>
 </RCC>

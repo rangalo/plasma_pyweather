@@ -14,6 +14,7 @@ class WeatherInfo:
     def __init__(self,location="Munich,Germany"):
 
         self.url = "http://www.google.com/ig/api?weather=" + location
+        #self.url = "http://www.google.de/ig/api?weather=" + location
 
         self.general = {"location": "N/A", "unit":"SI","city":"N/A"}
         self.current_condition = {"condition":"N/A","temp_c":"N/A","humidity":"N/A","wind_condition":"N/A"}
@@ -22,6 +23,9 @@ class WeatherInfo:
     def parse(self):
         print self.url
         sock = urllib.urlopen(self.url)
+        #xml = sock.read().decode("iso-8859-1")
+        #xml = sock.read().decode("utf8")
+        #print xml
         doc = minidom.parse(sock)
         nodes = doc.getElementsByTagName("forecast_information")
 
@@ -40,7 +44,7 @@ class WeatherInfo:
             for key in self.current_condition.keys():
                 self.current_condition[key] = (node.getElementsByTagName(key)[0]).getAttribute("data")
  
-        # fetch forcast conditions
+        # fetch forecast conditions
         fc = doc.getElementsByTagName("forecast_conditions")
         if len(fc) <> 0:
             fc_conditions = list()
