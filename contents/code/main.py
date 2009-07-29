@@ -20,6 +20,9 @@ import images_rc
  
 class WeatherApplet(plasmascript.Applet):
     def __init__(self,parent,args=None):
+        
+        # as it looks ugly, we will get rid of widgets
+        
         plasmascript.Applet.__init__(self,parent)
         self._unit = "SI"
         self._image_prefix = ":/images/"
