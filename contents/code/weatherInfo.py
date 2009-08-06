@@ -13,16 +13,19 @@ from xml.dom import minidom, Node
 class WeatherInfo:
     def __init__(self,location="Munich,Germany"):
 
-        self.url = "http://www.google.com/ig/api?weather=" + location
+        self._urlPart = "http://www.google.com/ig/api?weather="
         #self.url = "http://www.google.de/ig/api?weather=" + location
 
         self.general = {"location": "N/A", "unit":"SI","city":"N/A"}
         self.current_condition = {"condition":"N/A","temp_c":"N/A","humidity":"N/A","wind_condition":"N/A"}
         self.forecast_conditions = [{"day_of_week":"N/A","low":"N/A","high":"N/A","condition":"N/A"}]    
 
-    def parse(self):
-        print self.url
-        sock = urllib.urlopen(self.url)
+    def parse(self,location="Munich,Germany"):
+        strUrl = self._urlPart + location
+         
+        print strUrl
+        
+        sock = urllib.urlopen(strUrl)
         #xml = sock.read().decode("iso-8859-1")
         #xml = sock.read().decode("utf8")
         #print xml

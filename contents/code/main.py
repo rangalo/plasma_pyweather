@@ -8,8 +8,8 @@
 #
 ########################################################
  
-from PyQt4.QtCore import QTimer, QString, Qt, SIGNAL
-from PyQt4.QtGui import QGraphicsGridLayout,QGraphicsLinearLayout
+from PyQt4.QtCore import QTimer, QString, Qt, SIGNAL, QRect
+from PyQt4.QtGui import QPainter, QStyleOptionGraphicsItem, QBrush, QColor, QFont
 from PyKDE4.plasma import Plasma
 from PyKDE4 import plasmascript
  
@@ -25,6 +25,9 @@ class WeatherApplet(plasmascript.Applet):
         
         plasmascript.Applet.__init__(self,parent)
         self._unit = "SI"
+        self._location = "Munich,Germany"
+        self._weather = Weather()
+        self._mapper = ConditionMapper()        
         self._image_prefix = ":/images/"
         
         self._img_width = 16
@@ -33,84 +36,11 @@ class WeatherApplet(plasmascript.Applet):
         self._big_img_height = 48
         self._fc_column_width = 100
         
+        
     def init(self):
         self.setHasConfigurationInterface(False)
         self.setAspectRatioMode(Plasma.IgnoreAspectRatio)
         
-        
-        self.theme = Plasma.Svg(self)
-        self.theme.setImagePath("widgets/background")
-        self.setBackgroundHints(Plasma.Applet.DefaultBackground)
- 
-        # self.layout = QGraphicsLinearLayout(Qt.Vertical, self.applet)
-        self.layout_main = QGraphicsGridLayout(self.applet)
-        self.layout_top_left = QGraphicsLinearLayout(Qt.Vertical,self.layout_main)
-        self.layout_bottom = QGraphicsGridLayout(self.layout_main)
-        self.layout_bottom.setColumnMaximumWidth(0,self._fc_column_width)
-        self.layout_bottom.setColumnMaximumWidth(1,self._fc_column_width)
-        self.layout_bottom.setColumnMaximumWidth(2,self._fc_column_width)
-        
-        self.lb_location = Plasma.Label(self.applet)
-        self.lb_temperature = Plasma.Label(self.applet)
-        self.lb_condition = Plasma.Label(self.applet)
-        self.lb_humidity = Plasma.Label(self.applet)
-        self.lb_wind = Plasma.Label(self.applet)
-        
-        # create svg widgets for conditions
-        self.svg_w_current = Plasma.SvgWidget(self.applet)
-        self.svg_w_fc1 = Plasma.SvgWidget(self.applet)
-        self.svg_w_fc2 = Plasma.SvgWidget(self.applet)
-        self.svg_w_fc3 = Plasma.SvgWidget(self.applet)
-        
-# self.svg_w_fc1.resize(self._img_width,self._img_height)
-        
- 
-        # create labels for forecast
-        self.lb_temp_fc1 = Plasma.Label(self.applet)
-        self.lb_temp_fc2 = Plasma.Label(self.applet)
-        self.lb_temp_fc3 = Plasma.Label(self.applet)
-        
- 
-        
-        self.lb_day_fc1 = Plasma.Label(self.applet)
-        self.lb_day_fc2 = Plasma.Label(self.applet)
-        self.lb_day_fc3 = Plasma.Label(self.applet)
-        
-        
-        # create images to display conditions
-        self.svg_current = Plasma.Svg(self.applet)
-        self.svg_fc1 = Plasma.Svg(self.applet)
-        self.svg_fc2 = Plasma.Svg(self.applet)
-        self.svg_fc3 = Plasma.Svg(self.applet)
-        
-        
-       
-        self.layout_main.addItem(self.layout_top_left,0,0)
-        self.layout_main.addItem(self.svg_w_current,0,1)
-        self.layout_main.addItem(self.layout_bottom,1,0,1,2,Qt.Alignment(Qt.AlignCenter))
-        
-        # add current conditions
-        self.layout_top_left.addItem(self.lb_location)
-        self.layout_top_left.addItem(self.lb_temperature)
-        self.layout_top_left.addItem(self.lb_condition)
-        self.layout_top_left.addItem(self.lb_humidity)
-        self.layout_top_left.addItem(self.lb_wind)
- 
-        # add forecast labels for days
-        self.layout_bottom.addItem(self.lb_day_fc1,0,0,1,1,Qt.Alignment(Qt.AlignHorizontal_Mask))
-        self.layout_bottom.addItem(self.lb_day_fc2,0,1,1,1,Qt.Alignment(Qt.AlignHCenter))
-        self.layout_bottom.addItem(self.lb_day_fc3,0,2,1,1,Qt.Alignment(Qt.AlignHCenter))
-        # add forecast images
-        self.layout_bottom.addItem(self.svg_w_fc1,1,0,1,1,Qt.Alignment(Qt.AlignLeft))
-        self.layout_bottom.addItem(self.svg_w_fc2,1,1,1,1,Qt.Alignment(Qt.AlignLeft))
-        self.layout_bottom.addItem(self.svg_w_fc3,1,2,1,1,Qt.Alignment(Qt.AlignLeft))
-        # add forecast labels for temp
-        self.layout_bottom.addItem(self.lb_temp_fc1,2,0,1,1,Qt.Alignment(Qt.AlignCenter))
-        self.layout_bottom.addItem(self.lb_temp_fc2,2,1,1,1,Qt.Alignment(Qt.AlignCenter))
-        self.layout_bottom.addItem(self.lb_temp_fc3,2,2,1,1,Qt.Alignment(Qt.AlignCenter))
-        
-        
-        self.setLayout(self.layout_main)
         self.resize(375,375)
         
         self.checkWeather()
@@ -122,64 +52,119 @@ class WeatherApplet(plasmascript.Applet):
   
     def checkWeather(self):
         wi = WeatherInfo()
-        mapper = ConditionMapper()
-        wi.parse()
-        weather = Weather()
-        weather.extractData(wi,self._unit)
+        wi.parse(self._location)
         
- 
-        self.lb_location.setText("Location: " + weather.location)
-            
-            
-        self.lb_temperature.setText(weather.current_temperature)
-        self.lb_condition.setText("Condition: " + weather.current_condition)
-        self.lb_humidity.setText(weather.current_humidity)
-        self.lb_wind.setText(weather.current_wind)
-        
-        # current condition image
-        self.svg_current.setImagePath(self._image_prefix+mapper.getMappedImageName(weather.current_condition))
-        self.svg_current.resize(self._big_img_width,self._big_img_height)
-        self.svg_w_current.setSvg(self.svg_current)
-        
-        # load forecast days
-        fc_day = weather.fc_dl[0]
-        #self.lb_day_fc1.setText("Tomorrow")
-        self.lb_day_fc1.setText(fc_day)
-        
-        fc_day = weather.fc_dl[1]
-        self.lb_day_fc2.setText(fc_day)
-        
-        fc_day = weather.fc_dl[2]
-        self.lb_day_fc3.setText(fc_day)
-        
-        # load forecast images
-        fc = weather.fc_conditions[0]
-        print fc
-        self.svg_fc1.setImagePath(self._image_prefix + mapper.getMappedImageName(fc))
-        self.svg_fc1.resize(self._img_width,self._img_height)
-        self.svg_w_fc1.setSvg(self.svg_fc1)
-        
-        fc = weather.fc_conditions[1]
-        print fc
-        self.svg_fc2.setImagePath(self._image_prefix + mapper.getMappedImageName(fc))
-        self.svg_fc2.resize(self._img_width,self._img_height)
-        self.svg_w_fc2.setSvg(self.svg_fc2)
-        
-        fc = weather.fc_conditions[2]
-        print fc
-        self.svg_fc3.setImagePath(self._image_prefix + mapper.getMappedImageName(fc))
-        self.svg_fc3.resize(self._img_width,self._img_height)
-        self.svg_w_fc3.setSvg(self.svg_fc3)
-        
-        
-        
-        self.lb_temp_fc1.setText(weather.fc_low_high[0])
-        self.lb_temp_fc2.setText(weather.fc_low_high[1])
-        self.lb_temp_fc3.setText(weather.fc_low_high[2])
- 
-        # self.layout.addItem(label)
-        # self.setLayout(self.layout)
+        newWeather = Weather()
+        newWeather.extractData(wi,self._unit)
+        self._weather = newWeather 
+      
         self.update()
+
+    def paintInterface(self,painter,option,contentRect):
+        # define some parameters
+        padding = contentRect.height()/50
+        fontSize = contentRect.height()/35
+        
+        txtFieldWidth = contentRect.width()/2 - 2*padding
+        txtFieldHeight = contentRect.height()/20
+        
+        
+        current_img_width = contentRect.height()/3
+        current_img_height = contentRect.height()/3
+        
+        whiteBrush10p = QBrush(QColor.fromCmyk(0,0,0,0,5))
+        whiteBrush20p = QBrush(QColor.fromCmyk(0,0,0,0,40))
+        
+        fcRectWidth = (contentRect.width() - 4 * padding)/3
+        fcRectHeight = current_img_height + 2 * padding + 2 * txtFieldHeight
+        
+        
+        
+        textColor = Plasma.Theme.defaultTheme().color(Plasma.Theme.TextColor)
+        bgColor = Plasma.Theme.defaultTheme().color(Plasma.Theme.BackgroundColor)
+        textFont = Plasma.Theme.defaultTheme().font(Plasma.Theme.DefaultFont)
+        
+        # create text rects
+        rect_text_location = QRect(contentRect.left() + padding ,contentRect.top() + 2*padding, txtFieldWidth, txtFieldHeight)
+        rect_text_temperature = QRect(contentRect.left() + padding ,contentRect.top() + 3* padding + 1 * txtFieldHeight , txtFieldWidth, txtFieldHeight)
+        rect_text_condition = QRect(contentRect.left() + padding ,contentRect.top() + 4* padding + 2 * txtFieldHeight , txtFieldWidth, txtFieldHeight)
+        rect_text_humidity = QRect(contentRect.left() + padding ,contentRect.top() + 5* padding + 3 * txtFieldHeight , txtFieldWidth, txtFieldHeight)
+        rect_text_wind = QRect(contentRect.left() + padding , contentRect.top() + 6* padding + 4 * txtFieldHeight , txtFieldWidth, txtFieldHeight)
+        
+        painter.save()
+        
+        painter.setPen(textColor)
+        textFont.setPointSize(fontSize)
+        painter.setFont(textFont)
+        
+        painter.drawText(rect_text_location,Qt.Alignment(Qt.AlignLeft),"Location: " + self._weather.location)
+        painter.drawText(rect_text_temperature,Qt.Alignment(Qt.AlignLeft),"Temperature: " + self._weather.current_temperature)
+        painter.drawText(rect_text_condition,Qt.Alignment(Qt.AlignLeft),"Condition: " + self._weather.current_condition)
+        painter.drawText(rect_text_humidity,Qt.Alignment(Qt.AlignLeft),self._weather.current_humidity)
+        painter.drawText(rect_text_wind,Qt.Alignment(Qt.AlignLeft),self._weather.current_wind)
+        
+        svg_current = Plasma.Svg()
+        svg_current.setImagePath(self._image_prefix + self._mapper.getMappedImageName(self._weather.current_condition))
+        svg_current.resize(current_img_width,current_img_height)
+        xOffset = contentRect.width()/2 + contentRect.width()/2 - current_img_width
+        yOffset = contentRect.top() + 2 * padding
+        svg_current.paint(painter,contentRect.left() + xOffset, yOffset)
+        
+        # create forecast blocks
+        fc_rect1 = QRect(contentRect.left() + padding, contentRect.bottom() - fcRectHeight, fcRectWidth, fcRectHeight)
+        fc_rect2 = QRect(fc_rect1.right() + padding, contentRect.bottom() - fcRectHeight, fcRectWidth, fcRectHeight)
+        fc_rect3 = QRect(fc_rect2.right() + padding, contentRect.bottom() - fcRectHeight, fcRectWidth, fcRectHeight)
+        
+        painter.setPen(bgColor)
+        painter.setBrush(whiteBrush20p)
+        painter.drawRect(fc_rect1)
+        painter.drawRect(fc_rect3)
+        painter.setBrush(whiteBrush10p)
+        painter.drawRect(fc_rect2)
+        
+        # text rects for day list
+        rect_text_dl1 = QRect(fc_rect1.left(),fc_rect1.top() + padding,fcRectWidth,txtFieldHeight)
+        rect_text_dl2 = QRect(fc_rect2.left(),fc_rect2.top() + padding,fcRectWidth,txtFieldHeight)
+        rect_text_dl3 = QRect(fc_rect3.left(),fc_rect3.top() + padding,fcRectWidth,txtFieldHeight)
+        
+        painter.setPen(textColor)
+        painter.drawText(rect_text_dl1,Qt.Alignment(Qt.AlignCenter),self._weather.fc_dl[0])
+        painter.drawText(rect_text_dl2,Qt.Alignment(Qt.AlignCenter),self._weather.fc_dl[1])
+        painter.drawText(rect_text_dl3,Qt.Alignment(Qt.AlignCenter),self._weather.fc_dl[2])
+        
+        fc_svg1 = Plasma.Svg()
+        fc_svg2 = Plasma.Svg()
+        fc_svg3 = Plasma.Svg()
+        
+        fc_svg1.setImagePath(self._image_prefix + self._mapper.getMappedImageName(self._weather.fc_conditions[0]))
+        fc_svg2.setImagePath(self._image_prefix + self._mapper.getMappedImageName(self._weather.fc_conditions[1]))
+        fc_svg3.setImagePath(self._image_prefix + self._mapper.getMappedImageName(self._weather.fc_conditions[2]))
+        
+        fc_svg1.resize(current_img_width,current_img_height)
+        fc_svg2.resize(current_img_width,current_img_height)
+        fc_svg3.resize(current_img_width,current_img_height)
+        
+        xOffSet = fc_rect1.left() + (fc_rect1.width() - current_img_width)/2
+        fc_svg1.paint(painter,xOffSet, fc_rect1.top() + txtFieldHeight + 2* padding)
+        xOffSet = fc_rect2.left() + (fc_rect2.width() - current_img_width)/2
+        fc_svg2.paint(painter,xOffSet, fc_rect2.top() + txtFieldHeight + 2* padding)
+        xOffSet = fc_rect3.left() + (fc_rect3.width() - current_img_width)/2
+        fc_svg3.paint(painter,xOffSet, fc_rect3.top() + txtFieldHeight + 2* padding)
+        
+        # text rects for high/low temperatures
+        
+        rect_text_temp1 = QRect(fc_rect1.left(),fc_rect1.bottom() - 3 * padding,fcRectWidth,txtFieldHeight)
+        rect_text_temp2 = QRect(fc_rect2.left(),fc_rect2.bottom() - 3 * padding,fcRectWidth,txtFieldHeight)
+        rect_text_temp3 = QRect(fc_rect3.left(),fc_rect3.bottom() - 3 * padding,fcRectWidth,txtFieldHeight)
+        painter.setPen(textColor)
+        painter.drawText(rect_text_temp1,Qt.Alignment(Qt.AlignCenter),self._weather.fc_low_high[0])
+        painter.drawText(rect_text_temp2,Qt.Alignment(Qt.AlignCenter),self._weather.fc_low_high[1])
+        painter.drawText(rect_text_temp3,Qt.Alignment(Qt.AlignCenter),self._weather.fc_low_high[2])
+        
+        
+        painter.restore()
+        
+        
  
 def CreateApplet(parent):
     return WeatherApplet(parent)
