@@ -10,12 +10,14 @@
  
 from PyQt4.QtCore import QTimer, QString, Qt, SIGNAL, QRect
 from PyQt4.QtGui import QPainter, QStyleOptionGraphicsItem, QBrush, QColor, QFont
+from PyKDE4.kdeui import KDialog, KPageDialog
 from PyKDE4.plasma import Plasma
 from PyKDE4 import plasmascript
  
 from weatherInfo import WeatherInfo
 from conditionMapper import ConditionMapper
 from weather import Weather
+from weatherConfig import WeatherConfig
 import images_rc
  
 class WeatherApplet(plasmascript.Applet):
@@ -38,7 +40,7 @@ class WeatherApplet(plasmascript.Applet):
         
         
     def init(self):
-        self.setHasConfigurationInterface(False)
+        self.setHasConfigurationInterface(True)
         self.setAspectRatioMode(Plasma.IgnoreAspectRatio)
         
         self.resize(375,375)
@@ -50,6 +52,30 @@ class WeatherApplet(plasmascript.Applet):
         self.timer.start(0.5*60000)
  
   
+  
+    
+    def createConfigurationInterface(self,parent):
+        self.weatherConfig = WeatherConfig(self)
+        page = parent.addPage(self.weatherConfig,"PyWeather Configuration")
+        
+        self.connect(parent, SIGNAL("okClicked()"), self.configAccepted)
+        self.connect(parent, SIGNAL("cancelClicked()"), self.configDenied)
+    
+    def showConfigurationInterface(self):
+        dialog = KPageDialog()
+        dialog.setFaceType(KPageDialog.Plain)
+        dialog.setButtons(KDialog.ButtonCode(KDialog.Ok | KDialog.Cancel))
+        self.createConfigurationInterface(dialog)
+        dialog.resize(400,300)
+        dialog.exec_()
+    
+    def configDenied(self):
+        pass
+    
+    def configAccepted(self):
+        self._location = self.weatherConfig.getLocation()
+        self.checkWeather()
+
     def checkWeather(self):
         wi = WeatherInfo()
         wi.parse(self._location)
@@ -59,6 +85,7 @@ class WeatherApplet(plasmascript.Applet):
         self._weather = newWeather 
       
         self.update()
+
 
     def paintInterface(self,painter,option,contentRect):
         # define some parameters
