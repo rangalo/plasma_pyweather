@@ -13,7 +13,9 @@ from PyQt4.QtGui import QPainter, QStyleOptionGraphicsItem, QBrush, QColor, QFon
 from PyKDE4.kdeui import KDialog, KPageDialog
 from PyKDE4.plasma import Plasma
 from PyKDE4 import plasmascript
- 
+from ConfigParser import ConfigParser
+import os
+
 from weatherInfo import WeatherInfo
 from conditionMapper import ConditionMapper
 from weather import Weather
@@ -26,11 +28,25 @@ class WeatherApplet(plasmascript.Applet):
         # as it looks ugly, we will get rid of widgets
         
         plasmascript.Applet.__init__(self,parent)
-        self._unit = "SI"
-        self._location = "Munich,Germany"
+        
+        
         self._weather = Weather()
         self._mapper = ConditionMapper()        
         self._image_prefix = ":/images/"
+        self._config_file = os.path.join(".","weather.cfg")
+        if os.path.exists(self._config_file):
+            cfgParser = ConfigParser()
+            cfgParser.read(self._config_file)
+            city = cfgParser.get('default', 'city')
+            country = cfgParser.get('default', 'country')
+        else:
+            city = "Munich"
+            country = "Germany"
+            
+        self._location = city + "," + country
+        self._unit = "SI"
+        
+            
         
         self._img_width = 16
         self._img_height = 16
@@ -74,6 +90,21 @@ class WeatherApplet(plasmascript.Applet):
     
     def configAccepted(self):
         self._location = self.weatherConfig.getLocation()
+        city = self.weatherConfig.getCity()
+        country = self.weatherConfig.getCountry()
+        
+        cfgParser = ConfigParser()
+        cfgParser.read(self._config_file)
+        if not cfgParser.has_section('default'):
+            cfgParser.add_section('default')
+        
+        cfgParser.set('default', 'city',city)
+        cfgParser.set('default','country',country)
+        
+        cfgFile = open(self._config_file,"w")
+        
+        cfgParser.write(cfgFile)
+            
         self.checkWeather()
 
     def checkWeather(self):
@@ -112,7 +143,7 @@ class WeatherApplet(plasmascript.Applet):
         textFont = Plasma.Theme.defaultTheme().font(Plasma.Theme.DefaultFont)
         
         # create text rects
-        rect_text_location = QRect(contentRect.left() + padding ,contentRect.top() + 2*padding, txtFieldWidth, txtFieldHeight)
+        rect_text_location = QRect(contentRect.left() + padding ,contentRect.top() + 2*padding, 2*txtFieldWidth, txtFieldHeight)
         rect_text_temperature = QRect(contentRect.left() + padding ,contentRect.top() + 3* padding + 1 * txtFieldHeight , txtFieldWidth, txtFieldHeight)
         rect_text_condition = QRect(contentRect.left() + padding ,contentRect.top() + 4* padding + 2 * txtFieldHeight , txtFieldWidth, txtFieldHeight)
         rect_text_humidity = QRect(contentRect.left() + padding ,contentRect.top() + 5* padding + 3 * txtFieldHeight , txtFieldWidth, txtFieldHeight)
@@ -134,7 +165,7 @@ class WeatherApplet(plasmascript.Applet):
         svg_current.setImagePath(self._image_prefix + self._mapper.getMappedImageName(self._weather.current_condition))
         svg_current.resize(current_img_width,current_img_height)
         xOffset = contentRect.width()/2 + contentRect.width()/2 - current_img_width
-        yOffset = contentRect.top() + 2 * padding
+        yOffset = contentRect.top() + txtFieldHeight + 2 * padding
         svg_current.paint(painter,contentRect.left() + xOffset, yOffset)
         
         # create forecast blocks

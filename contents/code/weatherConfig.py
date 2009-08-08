@@ -24,4 +24,11 @@ class WeatherConfig(QWidget,Ui_Dialog):
         strCity = str.strip(str(self.txtCity.text()))
         strCountry = str.strip(str(self.txtCountry.text()))
         return strCity + "," + strCountry
-        
+    
+    def getCity(self):
+        strCity = str.strip(str(self.txtCity.text()))
+        return strCity
+    
+    def getCountry(self):
+        strCountry = str.strip(str(self.txtCountry.text()))
+        return strCountry
