@@ -15,4 +15,9 @@ $ plasmapkg -i plasma_pyweather.palsmoid
 
 Unforutately, the gui for adding a new widget can only add binary widgets at the time of writing this.
 
+# Create the package
+If you download the whole source code e.g. from github, go to the extracted directory
+and run the followig script
+
+$ bash makePlasmoidPkg.sh
 
