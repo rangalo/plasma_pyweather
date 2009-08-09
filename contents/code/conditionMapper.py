@@ -19,7 +19,10 @@ class ConditionMapper(object):
                                "na":"not-available.svgz",
                                "cloudy":"cloudy.svgz",
                                "snow":"snow.svgz",
-                               "thunder":"thunderstorms.svgz"
+                               "thunder":"thunderstorms.svgz",
+                               "haze" : "haze.svgz",
+                               "drizzle" : "drizzle.svgz",
+                               "windy" : "windy.svgz"
                                }
         
     def _getRainyImage(self):
@@ -39,12 +42,25 @@ class ConditionMapper(object):
     
     def _getThunderImage(self):
         return self._condition_map["thunder"]
+    def _getHazeImage(self):
+        return self._condition_map["haze"]
+    def _getWindyImage(self):
+        return self._condition_map["windy"]
+    def _getDrizzleImage(self):
+        return self._condition_map["drizzle"]
+    
     
     def getMappedImageName(self,condition):
         lower_condition = condition.lower()
         
-        if "rain" in lower_condition or "shower" in lower_condition or  "drizzle" in lower_condition :
+        if "rain" in lower_condition or "shower" in lower_condition:
             return self._getRainyImage()        
+        elif "drizzle" in lower_condition:
+            return self._getDrizzleImage()
+        elif "haze" in lower_condition:
+            return self._getHazeImage()
+        elif "windy" in lower_condition:
+            return self._getWindyImage()
         elif "fair" in lower_condition or "sunny" in lower_condition or "clear" in lower_condition:
             return self._getSunnyImage()
         elif "snow" in lower_condition or "flurries" in lower_condition or "wintry" in lower_condition:

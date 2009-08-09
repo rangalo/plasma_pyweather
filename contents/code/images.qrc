@@ -5,5 +5,7 @@
         <file alias="not-available.svgz">../images/not-available.svgz</file>
         <file alias="cloudy.svgz">../images/cloudy.svgz</file>
         <file alias="thunderstorms.svgz">../images/thunderstorms.svgz</file>
+        <file alias="haze.svgz">../images/haze.svgz</file>
+        <file alias="windy.svgz">../images/windy.svgz</file>
     </qresource>
 </RCC>
