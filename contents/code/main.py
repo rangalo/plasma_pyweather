@@ -33,13 +33,16 @@ class WeatherApplet(plasmascript.Applet):
         self._weather = Weather()
         self._mapper = ConditionMapper()        
         self._image_prefix = ":/images/"
-        self._config_file = os.path.join(".",".weather.cfg")
-        if os.path.exists(self._config_file):
+        self._config_file = ".weather.cfg"
+        strFile = os.path.join(".", self._config_file)
+        if os.path.exists(strFile):
             cfgParser = ConfigParser()
-            cfgParser.read(self._config_file)
+            cfgFile = open(strFile)
+            cfgParser.readfp(cfgFile)
             city = cfgParser.get('default', 'city')
             country = cfgParser.get('default', 'country')
             unit = cfgParser.get('default', 'unit')
+            cfgFile.close()
         else:
             city = "Munich"
             country = "Germany"
@@ -113,6 +116,7 @@ class WeatherApplet(plasmascript.Applet):
         
         cfgParser.write(cfgFile)
             
+        cfgFile.close()
         self.checkWeather()
 
     def checkWeather(self):
