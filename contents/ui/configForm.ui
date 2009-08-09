@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>594</width>
-    <height>348</height>
+    <width>310</width>
+    <height>163</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,35 +16,35 @@
   <widget class="QLabel" name="lblCity">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>60</y>
-     <width>161</width>
+     <x>11</x>
+     <y>33</y>
+     <width>41</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>Enter Your City:</string>
+    <string>City:</string>
    </property>
   </widget>
   <widget class="QLabel" name="lblCountry">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>160</y>
-     <width>161</width>
+     <x>10</x>
+     <y>70</y>
+     <width>71</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>Enter Your Country:</string>
+    <string>Country:</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="txtCity">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>60</y>
-     <width>301</width>
+     <x>80</x>
+     <y>30</y>
+     <width>171</width>
      <height>24</height>
     </rect>
    </property>
@@ -52,12 +52,45 @@
   <widget class="QLineEdit" name="txtCountry">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>160</y>
-     <width>301</width>
+     <x>80</x>
+     <y>70</y>
+     <width>171</width>
      <height>24</height>
     </rect>
    </property>
+  </widget>
+  <widget class="QLabel" name="lblUnit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Unit:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbUnit">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>110</y>
+     <width>81</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>SI</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>US</string>
+    </property>
+   </item>
   </widget>
  </widget>
  <resources/>

@@ -33,18 +33,21 @@ class WeatherApplet(plasmascript.Applet):
         self._weather = Weather()
         self._mapper = ConditionMapper()        
         self._image_prefix = ":/images/"
-        self._config_file = os.path.join(".","weather.cfg")
+        self._config_file = os.path.join(".",".weather.cfg")
         if os.path.exists(self._config_file):
             cfgParser = ConfigParser()
             cfgParser.read(self._config_file)
             city = cfgParser.get('default', 'city')
             country = cfgParser.get('default', 'country')
+            unit = cfgParser.get('default', 'unit')
         else:
             city = "Munich"
             country = "Germany"
-            
+            unit = "SI"
+        self._city = city
+        self._country = country   
         self._location = city + "," + country
-        self._unit = "SI"
+        self._unit = unit
         
             
         
@@ -71,9 +74,10 @@ class WeatherApplet(plasmascript.Applet):
   
     
     def createConfigurationInterface(self,parent):
-        self.weatherConfig = WeatherConfig(self)
-        page = parent.addPage(self.weatherConfig,"PyWeather Configuration")
-        
+        defaultConfig = {"city":self._city,"country":self._country,"unit":self._unit}
+        self.weatherConfig = WeatherConfig(self,defaultConfig)
+        #page = parent.addPage(self.weatherConfig,"PyWeather Configuration")
+        page = parent.addPage(self.weatherConfig,"")
         self.connect(parent, SIGNAL("okClicked()"), self.configAccepted)
         self.connect(parent, SIGNAL("cancelClicked()"), self.configDenied)
     
@@ -92,7 +96,10 @@ class WeatherApplet(plasmascript.Applet):
         self._location = self.weatherConfig.getLocation()
         city = self.weatherConfig.getCity()
         country = self.weatherConfig.getCountry()
-        
+        self._city = city
+        self._country = country
+        unit = self.weatherConfig.getUnit()
+        self._unit = unit
         cfgParser = ConfigParser()
         cfgParser.read(self._config_file)
         if not cfgParser.has_section('default'):
@@ -100,6 +107,7 @@ class WeatherApplet(plasmascript.Applet):
         
         cfgParser.set('default', 'city',city)
         cfgParser.set('default','country',country)
+        cfgParser.set('default','unit',unit)
         
         cfgFile = open(self._config_file,"w")
         

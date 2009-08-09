@@ -1,7 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Plasma PyWeather
-Name[nl]=Plasma PyWeather
+Name[de]=Plasma PyWeather
+Comment=Shows weather from google.com
 Type=Service
 ServiceTypes=Plasma/Applet
 Icon=weather-clear

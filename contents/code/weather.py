@@ -16,10 +16,10 @@ class Weather:
         self.fc_low_high = []
     
     def _fromUStoSI(self,temp_in_f):
-        return str( round ((int(temp_in_f) - 32) * 5 / 9.0, 1)) + " " + self._degree_symbol + "C"
+        return str(int( round ((int(temp_in_f) - 32) * 5 / 9.0, 0))) + " " + self._degree_symbol + "C"
  
     def _fromSItoUS(self,temp_in_c):
-        return str(round((int(temp_in_c) * 9 / 5.0) + 32, 2) ) + " " + self._degree_symbol + "F"
+        return str(int(round((int(temp_in_c) * 9 / 5.0) + 32, 0)) ) + " " + self._degree_symbol + "F"
         
     def _fromMilesToKms(self,dist_in_miles):
         return round(1.61 * dist_in_miles,1)
@@ -43,57 +43,63 @@ class Weather:
         self.current_humidity = wi.current_condition["humidity"]
         
         strWind = wi.current_condition["wind_condition"]
-        strWindArr = strWind.split()
-        windCondition = strWindArr[0] + " " + strWindArr[1] + " " + strWindArr[2]
-        speed = int(strWindArr[3])
         
-        if reqUnit == xmlUnit:
-            strSpeed = str(speed) + " " + strWindArr[4]
-        elif reqUnit == "SI":
-            strSpeed = str(self._fromMilesToKms(speed)) + " kmph"
-        elif reqUnit == "US":
-            strSpeed = str(seelf._fromKmsToMiles(speed)) + " mph"
+        if not strWind or strWind == "N/A":
+            self.current_wind = "Wind: N/A"
         else:
-            strSpeed = "N/A"
-        
-        self.current_wind = windCondition +" "+ strSpeed
-        
-        # prepare the day list
-        for i in [1,2,3]:
-            self.fc_dl.append(wi.forecast_conditions[i]["day_of_week"])
-        
-        # read the conditions
-        for i in [1,2,3]:
-            self.fc_conditions.append(wi.forecast_conditions[i]["condition"])
-        
-        # prepare the string with low/high temperature
-        if reqUnit == xmlUnit:
-            if reqUnit == "SI":
-                for i in [1,2,3]:
-                    self.fc_low_high.append(wi.forecast_conditions[i]["low"]
-                                            + " " +self._degree_symbol + "C / "
-                                            + wi.forecast_conditions[i]["high"]
-                                            + " " +self._degree_symbol +"C")
+            strWindArr = strWind.split()
+            windCondition = strWindArr[0] + " " + strWindArr[1] + " " + strWindArr[2]
+            speed = int(strWindArr[3])
+            
+            if reqUnit == xmlUnit:
+                strSpeed = str(speed) + " " + strWindArr[4]
+            elif reqUnit == "SI":
+                strSpeed = str(self._fromMilesToKms(speed)) + " kmph"
+            elif reqUnit == "US":
+                strSpeed = str(seelf._fromKmsToMiles(speed)) + " mph"
             else:
-                for i in [1,2,3]:
-                    self.fc_low_high.append(wi.forecast_conditions[i]["low"]
-                                            + " " +self._degree_symbol + "F / "
-                                            + wi.forecast_conditions[i]["high"]
-                                            + " " +self._degree_symbol +"F")
-        elif reqUnit == "SI":
-            for i in [1,2,3]:
+                strSpeed = "N/A"
+            
+            self.current_wind = windCondition +" "+ strSpeed
+        
+        fc_length = len(wi.forecast_conditions)
+        
+        # if no forecast available, put N/A everywhere
+        if fc_length <= 1:
+            for i in range(0,3):
+                self.fc_dl.append("N/A")
+                self.fc_conditions.append("N/A")
+                self.fc_low_high.append("N/A")
+            return
+        
+        
+        for i in range(1,fc_length):
+            self.fc_dl.append(wi.forecast_conditions[i]["day_of_week"])
+            self.fc_conditions.append(wi.forecast_conditions[i]["condition"])
+            if reqUnit == xmlUnit:
+                if reqUnit == "SI":
+                    self.fc_low_high.append(wi.forecast_conditions[i]["low"] 
+                                            + " " + self._degree_symbol + "C / " 
+                                            + wi.forecast_conditions[i]["high"] 
+                                            + " " + self._degree_symbol + "C")
+                else:
+                    self.fc_low_high.append(wi.forecast_conditions[i]["low"] 
+                                            + " " + self._degree_symbol + "F / " 
+                                            + wi.forecast_conditions[i]["high"] 
+                                            + " " + self._degree_symbol + "F")
+            elif reqUnit == "SI":
                 self.fc_low_high.append(self._fromUStoSI(wi.forecast_conditions[i]["low"])
                                         + " / "
                                         + self._fromUStoSI(wi.forecast_conditions[i]["high"]))
-        elif reqUnit == "US":
-            for i in [1,2,3]:
+            elif reqUnit == "US":
                 self.fc_low_high.append(self._fromSItoUS(wi.forecast_conditions[i]["low"])
                                         + " / "
                                         + self._fromSItoUS(wi.forecast_conditions[i]["high"]))
-        else:
-            for i in [1,2,3]:
+            else:
                 self.fc_low_high.append("N/A")
-            
+                
+                
+                    
         
     def show(self):
         print self.location
