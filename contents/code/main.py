@@ -65,7 +65,7 @@ class WeatherApplet(plasmascript.Applet):
         self.setHasConfigurationInterface(True)
         self.setAspectRatioMode(Plasma.IgnoreAspectRatio)
         
-        self.resize(375,375)
+        self.resize(325,300)
         
         self.checkWeather()
         

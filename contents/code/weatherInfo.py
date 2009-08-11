@@ -25,7 +25,11 @@ class WeatherInfo:
          
         print strUrl
         
-        sock = urllib.urlopen(strUrl)
+        try:
+            sock = urllib.urlopen(strUrl)
+        except IOError:
+            self.general["location"] = "Connection Error"
+            return
         #xml = sock.read().decode("iso-8859-1")
         #xml = sock.read().decode("utf8")
         #print xml
