@@ -23,12 +23,17 @@ from weatherConfig import WeatherConfig
 import images_rc
  
 class WeatherApplet(plasmascript.Applet):
-    def __init__(self,parent,args=None):
-        
+    def __init__(self,parent,args=None):        
         # as it looks ugly, we will get rid of widgets
         
         plasmascript.Applet.__init__(self,parent)
         
+        self.parent = parent
+        
+        
+        
+        
+    def init(self):
         
         self._weather = Weather()
         self._mapper = ConditionMapper()        
@@ -61,7 +66,7 @@ class WeatherApplet(plasmascript.Applet):
         self._fc_column_width = 100
         
         
-    def init(self):
+        
         self.setHasConfigurationInterface(True)
         self.setAspectRatioMode(Plasma.IgnoreAspectRatio)
         
