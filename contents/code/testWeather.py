@@ -4,7 +4,7 @@ from weatherInfo import WeatherInfo
 from weather import Weather
  
 wi = WeatherInfo()
-wi.parse("Munich,Germany")
+wi.parse("Buenos Aires,Argentina")
  
 weather = Weather()
 weather.extractData(wi,"SI")

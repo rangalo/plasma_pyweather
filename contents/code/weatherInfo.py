@@ -13,15 +13,17 @@ from xml.dom import minidom, Node
 class WeatherInfo:
     def __init__(self,location="Munich,Germany"):
 
-        self._urlPart = "http://www.google.com/ig/api?weather="
+        #self._urlPart = "http://www.google.com/ig/api?weather="
         #self.url = "http://www.google.de/ig/api?weather=" + location
+        self._urlPart = "http://www.google.com/ig/api?"
 
         self.general = {"location": "N/A", "unit":"SI","city":"N/A"}
         self.current_condition = {"condition":"N/A","temp_c":"N/A","temp_f":"N/A","humidity":"N/A","wind_condition":"N/A"}
         self.forecast_conditions = [{"day_of_week":"N/A","low":"N/A","high":"N/A","condition":"N/A"}]    
 
     def parse(self,location="Munich,Germany"):
-        strUrl = self._urlPart + location
+        #strUrl = self._urlPart + location
+        strUrl = self._urlPart + urllib.urlencode({'weather' : location})
          
         print strUrl
         
