@@ -2,8 +2,8 @@
 
 # Form implementation generated from reading ui file '../ui/configForm.ui'
 #
-# Created: Sun Aug  9 09:35:20 2009
-#      by: PyQt4 UI code generator 4.5.1
+# Created: Wed Nov 18 20:12:39 2009
+#      by: PyQt4 UI code generator 4.6
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -31,8 +31,8 @@ class Ui_Dialog(object):
         self.cmbUnit = QtGui.QComboBox(Dialog)
         self.cmbUnit.setGeometry(QtCore.QRect(80, 110, 81, 23))
         self.cmbUnit.setObjectName("cmbUnit")
-        self.cmbUnit.addItem(QtCore.QString())
-        self.cmbUnit.addItem(QtCore.QString())
+        self.cmbUnit.addItem("")
+        self.cmbUnit.addItem("")
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)

@@ -44,9 +44,9 @@ class WeatherApplet(plasmascript.Applet):
             cfgParser = ConfigParser()
             cfgFile = open(strFile)
             cfgParser.readfp(cfgFile)
-            city = cfgParser.get('default', 'city')
-            country = cfgParser.get('default', 'country')
-            unit = cfgParser.get('default', 'unit')
+            city = cfgParser.get('general', 'city')
+            country = cfgParser.get('general', 'country')
+            unit = cfgParser.get('general', 'unit')
             cfgFile.close()
         else:
             city = "Munich"
@@ -110,12 +110,12 @@ class WeatherApplet(plasmascript.Applet):
         self._unit = unit
         cfgParser = ConfigParser()
         cfgParser.read(self._config_file)
-        if not cfgParser.has_section('default'):
-            cfgParser.add_section('default')
+        if not cfgParser.has_section('general'):
+            cfgParser.add_section('general')
         
-        cfgParser.set('default', 'city',city)
-        cfgParser.set('default','country',country)
-        cfgParser.set('default','unit',unit)
+        cfgParser.set('general', 'city',city)
+        cfgParser.set('general','country',country)
+        cfgParser.set('general','unit',unit)
         
         strFile = os.path.join(os.path.expanduser('~'),self._config_file)
         cfgFile = open(strFile,"w")

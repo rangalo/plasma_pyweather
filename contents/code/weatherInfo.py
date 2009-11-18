@@ -7,7 +7,7 @@
 #
 ########################################################
 
-import sys, urllib
+import sys, urllib, codecs
 from xml.dom import minidom, Node
 
 class WeatherInfo:
@@ -23,7 +23,8 @@ class WeatherInfo:
 
     def parse(self,location="Munich,Germany"):
         #strUrl = self._urlPart + location
-        strUrl = self._urlPart + urllib.urlencode({'weather' : location})
+        strUrl = self._urlPart + urllib.urlencode({'weather' : location}) 
+        #+'&' + urllib.urlencode({'hl':'it'})
          
         print strUrl
         
@@ -32,9 +33,16 @@ class WeatherInfo:
         except IOError:
             self.general["location"] = "Connection Error"
             return
-        #xml = sock.read().decode("iso-8859-1")
-        #xml = sock.read().decode("utf8")
-        #print xml
+        
+        #encoding = sock.headers['Content-type'].split('charset=')[1]
+        #print encoding;
+        
+        #strResponse = u""
+        #strResponse = sock.read();
+        #strUtf = strResponse.decode(encoding).encode('utf-8')
+    
+        #doc = minidom.parseString(strUtf)
+        
         doc = minidom.parse(sock)
         nodes = doc.getElementsByTagName("forecast_information")
 
