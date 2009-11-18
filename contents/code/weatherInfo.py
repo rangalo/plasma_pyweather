@@ -37,8 +37,6 @@ class WeatherInfo:
         #encoding = sock.headers['Content-type'].split('charset=')[1]
         #print encoding;
         
-        #strResponse = u""
-        #strResponse = sock.read();
         #strUtf = strResponse.decode(encoding).encode('utf-8')
     
         #doc = minidom.parseString(strUtf)
