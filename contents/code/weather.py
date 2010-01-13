@@ -43,22 +43,29 @@ class Weather:
         self.current_humidity = wi.current_condition["humidity"]
         
         strWind = wi.current_condition["wind_condition"]
+        print 'Str Wind: ' + strWind
         
-        if not strWind or strWind == "N/A":
+        if not strWind:
             self.current_wind = "Wind: N/A"
         else:
-            strWindArr = strWind.split()
-            windCondition = strWindArr[0] + " " + strWindArr[1] + " " + strWindArr[2]
-            speed = int(strWindArr[3])
+            # Sometimes strWinds looks like "Wind: mph". It has the wrong format
+            windCondition = "Wind: "
+            strSpeed = "N/A"
+            try:
+                strWindArr = strWind.split()
+                windCondition = strWindArr[0] + " " + strWindArr[1] + " " + strWindArr[2]
+                speed = int(strWindArr[3])
             
-            if reqUnit == xmlUnit:
-                strSpeed = str(speed) + " " + strWindArr[4]
-            elif reqUnit == "SI":
-                strSpeed = str(self._fromMilesToKms(speed)) + " kmph"
-            elif reqUnit == "US":
-                strSpeed = str(seelf._fromKmsToMiles(speed)) + " mph"
-            else:
-                strSpeed = "N/A"
+                if reqUnit == xmlUnit:
+                    strSpeed = str(speed) + " " + strWindArr[4]
+                elif reqUnit == "SI":
+                    strSpeed = str(self._fromMilesToKms(speed)) + " kmph"
+                elif reqUnit == "US":
+                    strSpeed = str(seelf._fromKmsToMiles(speed)) + " mph"
+                else:
+                    strSpeed = "N/A"
+            except (IndexError):
+                print "EXCEPTION: Wind string is in the wrong format: ",  strWind
             
             self.current_wind = windCondition +" "+ strSpeed
         
