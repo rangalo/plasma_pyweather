@@ -2,8 +2,8 @@
 
 # Form implementation generated from reading ui file '../ui/configForm.ui'
 #
-# Created: Wed Nov 18 20:12:39 2009
-#      by: PyQt4 UI code generator 4.6
+# Created: Mon Jan 18 11:47:35 2010
+#      by: PyQt4 UI code generator 4.6.2
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -42,6 +42,6 @@ class Ui_Dialog(object):
         self.lblCity.setText(QtGui.QApplication.translate("Dialog", "City:", None, QtGui.QApplication.UnicodeUTF8))
         self.lblCountry.setText(QtGui.QApplication.translate("Dialog", "Country:", None, QtGui.QApplication.UnicodeUTF8))
         self.lblUnit.setText(QtGui.QApplication.translate("Dialog", "Unit:", None, QtGui.QApplication.UnicodeUTF8))
-        self.cmbUnit.setItemText(0, QtGui.QApplication.translate("Dialog", "SI", None, QtGui.QApplication.UnicodeUTF8))
-        self.cmbUnit.setItemText(1, QtGui.QApplication.translate("Dialog", "US", None, QtGui.QApplication.UnicodeUTF8))
+        self.cmbUnit.setItemText(0, QtGui.QApplication.translate("Dialog", "Metric", None, QtGui.QApplication.UnicodeUTF8))
+        self.cmbUnit.setItemText(1, QtGui.QApplication.translate("Dialog", "Imperial", None, QtGui.QApplication.UnicodeUTF8))
 

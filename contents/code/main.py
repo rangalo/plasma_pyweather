@@ -51,7 +51,7 @@ class WeatherApplet(plasmascript.Applet):
         else:
             city = "Munich"
             country = "Germany"
-            unit = "SI"
+            unit = "Metric"
         self._city = city
         self._country = country   
         self._location = city + "," + country

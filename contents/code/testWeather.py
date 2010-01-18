@@ -4,8 +4,8 @@ from weatherInfo import WeatherInfo
 from weather import Weather
  
 wi = WeatherInfo()
-wi.parse("Hong Kong,Hong Kong")
+wi.parse("Munich,Germany")
  
 weather = Weather()
-weather.extractData(wi,"SI")
+weather.extractData(wi,"Metric")
 weather.show()

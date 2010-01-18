@@ -83,12 +83,12 @@
    </property>
    <item>
     <property name="text">
-     <string>SI</string>
+     <string>Metric</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>US</string>
+     <string>Imperial</string>
     </property>
    </item>
   </widget>

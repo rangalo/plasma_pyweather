@@ -32,9 +32,9 @@ class Weather:
         
         xmlUnit = wi.general["unit"]
         
-        if reqUnit == "SI":
+        if reqUnit == "Metric":
             self.current_temperature = wi.current_condition["temp_c"] + " " + self._degree_symbol + "C"
-        elif reqUnit == "US":
+        elif reqUnit == "Imperial":
             self.current_temperature = wi.current_condition["temp_f"] + " " + self._degree_symbol + "F"
         else:
             self.current_temperature = "N/A"
@@ -58,10 +58,10 @@ class Weather:
             
                 if reqUnit == xmlUnit:
                     strSpeed = str(speed) + " " + strWindArr[4]
-                elif reqUnit == "SI":
+                elif reqUnit == "Metric":
                     strSpeed = str(self._fromMilesToKms(speed)) + " kmph"
-                elif reqUnit == "US":
-                    strSpeed = str(seelf._fromKmsToMiles(speed)) + " mph"
+                elif reqUnit == "Imperial":
+                    strSpeed = str(self._fromKmsToMiles(speed)) + " mph"
                 else:
                     strSpeed = "N/A"
             except (IndexError):
@@ -84,7 +84,7 @@ class Weather:
             self.fc_dl.append(wi.forecast_conditions[i]["day_of_week"])
             self.fc_conditions.append(wi.forecast_conditions[i]["condition"])
             if reqUnit == xmlUnit:
-                if reqUnit == "SI":
+                if reqUnit == "Metric":
                     self.fc_low_high.append(wi.forecast_conditions[i]["low"] 
                                             + " " + self._degree_symbol + "C / " 
                                             + wi.forecast_conditions[i]["high"] 
@@ -94,11 +94,11 @@ class Weather:
                                             + " " + self._degree_symbol + "F / " 
                                             + wi.forecast_conditions[i]["high"] 
                                             + " " + self._degree_symbol + "F")
-            elif reqUnit == "SI":
+            elif reqUnit == "Metric":
                 self.fc_low_high.append(self._fromUStoSI(wi.forecast_conditions[i]["low"])
                                         + " / "
                                         + self._fromUStoSI(wi.forecast_conditions[i]["high"]))
-            elif reqUnit == "US":
+            elif reqUnit == "Imperial":
                 self.fc_low_high.append(self._fromSItoUS(wi.forecast_conditions[i]["low"])
                                         + " / "
                                         + self._fromSItoUS(wi.forecast_conditions[i]["high"]))
