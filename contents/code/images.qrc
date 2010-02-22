@@ -1,14 +1,14 @@
 <RCC>
     <qresource prefix="/images">
-        <file alias="sunny.svgz">../images/sunny.svgz</file>
-        <file alias="showers.svgz">../images/showers.svgz</file>
-        <file alias="not-available.svgz">../images/not-available.svgz</file>
-        <file alias="cloudy.svgz">../images/cloudy.svgz</file>
-        <file alias="thunderstorms.svgz">../images/thunderstorms.svgz</file>
-        <file alias="haze.svgz">../images/haze.svgz</file>
-        <file alias="windy.svgz">../images/windy.svgz</file>
-        <file alias="foggy.svgz">../images/foggy.svgz</file>
-        <file alias="smoky.svgz">../images/smoky.svgz</file>
-        <file alias="snow.svgz">../images/snow.svgz</file>
+        <file alias="sunny.svg">../images/sunny.svg</file>
+        <file alias="showers.svg">../images/showers.svg</file>
+        <file alias="not-available.svg">../images/not-available.svg</file>
+        <file alias="cloudy.svg">../images/cloudy.svg</file>
+        <file alias="thunderstorms.svg">../images/thunderstorms.svg</file>
+        <file alias="haze.svg">../images/haze.svg</file>
+        <file alias="windy.svg">../images/windy.svg</file>
+        <file alias="foggy.svg">../images/foggy.svg</file>
+        <file alias="smoky.svg">../images/smoky.svg</file>
+        <file alias="snow.svg">../images/snow.svg</file>
     </qresource>
 </RCC>

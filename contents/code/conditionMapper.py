@@ -14,17 +14,17 @@ class ConditionMapper(object):
         '''
         Constructor
         '''
-        self._condition_map = {"rain":"showers.svgz",
-                               "sunny":"sunny.svgz",
-                               "na":"not-available.svgz",
-                               "cloudy":"cloudy.svgz",
-                               "snow":"snow.svgz",
-                               "thunder":"thunderstorms.svgz",
-                               "haze" : "haze.svgz",
-                               "drizzle" : "drizzle.svgz",
-                               "windy" : "windy.svgz",
-                               "foggy" : "foggy.svgz",
-                               "smoky" : "smoky.svgz"
+        self._condition_map = {"rain":"showers.svg",
+                               "sunny":"sunny.svg",
+                               "na":"not-available.svg",
+                               "cloudy":"cloudy.svg",
+                               "snow":"snow.svg",
+                               "thunder":"thunderstorms.svg",
+                               "haze" : "haze.svg",
+                               "drizzle" : "drizzle.svg",
+                               "windy" : "windy.svg",
+                               "foggy" : "foggy.svg",
+                               "smoky" : "smoky.svg"
                                }
         
     def _getRainyImage(self):

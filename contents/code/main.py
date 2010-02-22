@@ -179,8 +179,9 @@ class WeatherApplet(plasmascript.Applet):
         painter.drawText(rect_text_humidity,Qt.Alignment(Qt.AlignLeft),self._weather.current_humidity)
         painter.drawText(rect_text_wind,Qt.Alignment(Qt.AlignLeft),self._weather.current_wind)
         
-        svg_current = Plasma.Svg()
-        svg_current.setImagePath(self._image_prefix + self._mapper.getMappedImageName(self._weather.current_condition))
+        svg_current = Plasma.Svg(self)
+        curImgName = self._mapper.getMappedImageName(self._weather.current_condition)
+        svg_current.setImagePath(self._image_prefix + curImgName)
         svg_current.resize(current_img_width,current_img_height)
         xOffset = contentRect.width()/2 + contentRect.width()/2 - current_img_width
         yOffset = contentRect.top() + txtFieldHeight + 2 * padding
@@ -215,7 +216,8 @@ class WeatherApplet(plasmascript.Applet):
         fc_svg1.setImagePath(self._image_prefix + self._mapper.getMappedImageName(self._weather.fc_conditions[0]))
         fc_svg2.setImagePath(self._image_prefix + self._mapper.getMappedImageName(self._weather.fc_conditions[1]))
         fc_svg3.setImagePath(self._image_prefix + self._mapper.getMappedImageName(self._weather.fc_conditions[2]))
-        
+       
+
         fc_svg1.resize(current_img_width,current_img_height)
         fc_svg2.resize(current_img_width,current_img_height)
         fc_svg3.resize(current_img_width,current_img_height)

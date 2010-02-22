@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="128"
+   height="128"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="isolated-thunderstorms.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient6601"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient6599"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient6597"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient6595"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient6593"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient6591"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient6589"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3600"
+       id="linearGradient6587"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.5042494,0.8635581,0.8635581,-0.5042494,-1286.1705,2641.3863)"
+       x1="-176.76691"
+       y1="214.06895"
+       x2="-214.14255"
+       y2="238.75621" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3608"
+       id="linearGradient6585"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-964.09344,2099.2611)"
+       x1="-478.40439"
+       y1="147.43224"
+       x2="-430.65775"
+       y2="153.99823" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4031"
+       id="linearGradient6583"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-487.13624,1915)"
+       x1="-867.9063"
+       y1="403.42296"
+       x2="-722.9406"
+       y2="403.42296" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3600"
+       id="linearGradient6581"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-964.09344,2099.2611)"
+       x1="-176.76691"
+       y1="214.06895"
+       x2="-214.14255"
+       y2="238.75621" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3591"
+       id="linearGradient6579"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.6824411,-0.7309406,-0.7309406,0.6824411,-1481.329,1874.2769)"
+       x1="-436.25992"
+       y1="287.7439"
+       x2="-443.3916"
+       y2="255.41901" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3575"
+       id="linearGradient6577"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-964.09344,2099.2611)"
+       x1="-292.43408"
+       y1="104.3391"
+       x2="-258.60413"
+       y2="136.65891" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3618"
+       id="linearGradient6575"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-962.09344,2097.2611)"
+       x1="-324.75833"
+       y1="91.780396"
+       x2="-323.68991"
+       y2="279.55701" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4067"
+       id="linearGradient6573"
+       gradientUnits="userSpaceOnUse"
+       x1="-688.96814"
+       y1="799.94611"
+       x2="-638.28607"
+       y2="653.61218" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4067"
+       id="linearGradient6571"
+       gradientUnits="userSpaceOnUse"
+       x1="-688.96814"
+       y1="799.94611"
+       x2="-638.28607"
+       y2="653.61218" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient6569"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4067"
+       id="linearGradient6567"
+       gradientUnits="userSpaceOnUse"
+       x1="-688.96814"
+       y1="799.94611"
+       x2="-638.28607"
+       y2="653.61218" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient6565"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5901">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5903" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop5905" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5901"
+       id="linearGradient14331"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(11.313709,132.93607)"
+       x1="-454.18634"
+       y1="1503.7692"
+       x2="-450.6358"
+       y2="1448.5822" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5891">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop5893" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop5895" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5891"
+       id="linearGradient14329"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0163025,0,0,1.064468,18.975597,40.09599)"
+       x1="-439.95197"
+       y1="1396.2234"
+       x2="-436.92239"
+       y2="1424.1541" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5789">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5791" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop5793" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5789"
+       id="linearGradient14327"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-713.42044,1320.7035)"
+       x1="142.83595"
+       y1="251.8571"
+       x2="177.24957"
+       y2="251.8571" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6029">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop6031" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop6033" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6029"
+       id="linearGradient14325"
+       gradientUnits="userSpaceOnUse"
+       x1="-297.25958"
+       y1="1618.9899"
+       x2="-241.48778"
+       y2="1593.3326" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6037">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop6039" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop6041" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6037"
+       id="linearGradient14323"
+       gradientUnits="userSpaceOnUse"
+       x1="-297.25958"
+       y1="1536.339"
+       x2="-243.10599"
+       y2="1556.1381" />
+    <filter
+       inkscape:collect="always"
+       id="filter6025"
+       x="-0.049229903"
+       width="1.0984598"
+       y="-0.1339599"
+       height="1.2679198">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="5.548374"
+         id="feGaussianBlur6027" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient14321"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient14319"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient14317"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient14315"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient14313"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient14311"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient14309"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <filter
+       inkscape:collect="always"
+       id="filter4015"
+       x="-0.36380465"
+       width="1.7276093"
+       y="-0.07184972"
+       height="1.1436994">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.5336996"
+         id="feGaussianBlur4017" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3600"
+       id="linearGradient14307"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.5042494,0.8635581,0.8635581,-0.5042494,-786.17058,726.3863)"
+       x1="-176.76691"
+       y1="214.06895"
+       x2="-214.14255"
+       y2="238.75621" />
+    <filter
+       inkscape:collect="always"
+       id="filter4027"
+       x="-0.079830419"
+       width="1.1596608"
+       y="-0.24153928"
+       height="1.4830786">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.0687328"
+         id="feGaussianBlur4029" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3608">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3610" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop3612" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3608"
+       id="linearGradient14305"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-464.09352,184.26108)"
+       x1="-478.40439"
+       y1="147.43224"
+       x2="-430.65775"
+       y2="153.99823" />
+    <filter
+       inkscape:collect="always"
+       id="filter4043"
+       x="-0.05602197"
+       width="1.1120439"
+       y="-0.33521123"
+       height="1.6704225">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.3838601"
+         id="feGaussianBlur4045" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4031">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop4033" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop4035" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4031"
+       id="linearGradient14303"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(12.863704,0)"
+       x1="-867.9063"
+       y1="403.42296"
+       x2="-722.9406"
+       y2="403.42296" />
+    <filter
+       inkscape:collect="always"
+       id="filter4019"
+       x="-0.092092327"
+       width="1.1841847"
+       y="-0.17217635"
+       height="1.3443527">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.7567198"
+         id="feGaussianBlur4021" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3600">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3602" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop3604" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3600"
+       id="linearGradient14301"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-464.09352,184.26108)"
+       x1="-176.76691"
+       y1="214.06895"
+       x2="-214.14255"
+       y2="238.75621" />
+    <filter
+       inkscape:collect="always"
+       id="filter4023"
+       x="-0.099425467"
+       width="1.1988509"
+       y="-0.15131154"
+       height="1.3026231">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.6367681"
+         id="feGaussianBlur4025" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3591">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3593" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop3596" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3591"
+       id="linearGradient14299"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.6824411,-0.7309406,-0.7309406,0.6824411,-981.32907,-40.723112)"
+       x1="-436.25992"
+       y1="287.7439"
+       x2="-443.3916"
+       y2="255.41901" />
+    <filter
+       inkscape:collect="always"
+       id="filter4007"
+       x="-0.1299123"
+       width="1.2598246"
+       y="-0.11149308"
+       height="1.2229862">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.820394"
+         id="feGaussianBlur4009" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3575">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3577" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop3579" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3575"
+       id="linearGradient14297"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-464.09352,184.26108)"
+       x1="-292.43408"
+       y1="104.3391"
+       x2="-258.60413"
+       y2="136.65891" />
+    <filter
+       inkscape:collect="always"
+       id="filter3658">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.820407"
+         id="feGaussianBlur3660" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3618">
+      <stop
+         style="stop-color:#ececec;stop-opacity:1;"
+         offset="0"
+         id="stop3620" />
+      <stop
+         style="stop-color:#ececec;stop-opacity:0;"
+         offset="1"
+         id="stop3622" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3618"
+       id="linearGradient14295"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-462.09352,182.26108)"
+       x1="-324.75833"
+       y1="91.780396"
+       x2="-323.68991"
+       y2="279.55701" />
+    <filter
+       inkscape:collect="always"
+       id="filter4055">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.830407"
+         id="feGaussianBlur4057" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient14293"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <filter
+       inkscape:collect="always"
+       id="filter3867">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.4056226"
+         id="feGaussianBlur3869" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4067">
+      <stop
+         style="stop-color:#ffff84;stop-opacity:1;"
+         offset="0"
+         id="stop4069" />
+      <stop
+         style="stop-color:#ffff84;stop-opacity:0;"
+         offset="1"
+         id="stop4071" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4067"
+       id="linearGradient14291"
+       gradientUnits="userSpaceOnUse"
+       x1="-688.96814"
+       y1="799.94611"
+       x2="-638.28607"
+       y2="653.61218" />
+    <filter
+       inkscape:collect="always"
+       id="filter4239">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.5530841"
+         id="feGaussianBlur4241" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3725">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3727" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop3729" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3725"
+       id="linearGradient14289"
+       gradientUnits="userSpaceOnUse"
+       x1="-823.70477"
+       y1="734.5307"
+       x2="-823.49359"
+       y2="709.27008" />
+    <filter
+       inkscape:collect="always"
+       id="filter9031"
+       x="-0.108"
+       width="1.216"
+       y="-0.108"
+       height="1.216">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="7.2258117"
+         id="feGaussianBlur9033" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4089">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.84824218"
+         id="feGaussianBlur4091" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4097">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.84824218"
+         id="feGaussianBlur4099" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4109">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.84824218"
+         id="feGaussianBlur4111" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3981">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.9768424"
+         id="feGaussianBlur3983" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4085">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.84824218"
+         id="feGaussianBlur4087" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4105">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.84824218"
+         id="feGaussianBlur4107" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4113">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.84824218"
+         id="feGaussianBlur4115" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4117">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.84824218"
+         id="feGaussianBlur4119" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4101">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.84824218"
+         id="feGaussianBlur4103" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4093">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.84824218"
+         id="feGaussianBlur4095" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter5154">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.3243063"
+         id="feGaussianBlur5156" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter4901">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.74305852"
+         id="feGaussianBlur4903" />
+    </filter>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="77.734001"
+     inkscape:cy="106.51979"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="995"
+     inkscape:window-height="781"
+     inkscape:window-x="275"
+     inkscape:window-y="80" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g15380"
+       inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/04_thnderstorms2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0.3282051,0,0,0.3282051,492.30767,-709.6983)">
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         ry="0"
+         rx="0"
+         y="2162.6292"
+         x="-1499.7332"
+         height="389.46619"
+         width="389.46619"
+         id="rect6451"
+         style="opacity:0;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.53380471;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         transform="matrix(0.5667404,0.1409609,-0.1437025,0.6737992,-723.14014,2105.1416)"
+         style="filter:url(#filter4109)"
+         id="g6453">
+        <path
+           style="opacity:0.71014494;fill:#84b3ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           id="path6455"
+           sodipodi:nodetypes="ccccc"
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)" />
+        <path
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)"
+           sodipodi:nodetypes="ccccc"
+           id="path6457"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           style="opacity:0.36231887;fill:url(#linearGradient6565);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         transform="translate(-662.11394,1738.466)"
+         id="g6459">
+        <path
+           transform="matrix(1.0323118,0,0,0.7513378,732.51491,511.70199)"
+           id="path6461"
+           d="M -1315.2186,137.16398 L -1381.8887,268.48381 L -1333.4013,242.21985 L -1387.9496,383.6412 L -1295.0156,230.09802 L -1347.5435,232.11832 L -1315.2186,137.16398 z"
+           style="fill:#ffff00;fill-rule:evenodd;stroke:#ffff00;stroke-width:2.20281816;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4239)" />
+        <path
+           style="fill:url(#linearGradient6567);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter3867)"
+           d="M -625.20077,614.75847 L -694.0251,713.42403 L -643.97099,693.69092 L -700.28184,799.94613 L -604.34498,684.58333 L -658.57015,686.10126 L -625.20077,614.75847 z"
+           id="path6463" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         id="g6465"
+         style="filter:url(#filter4097)"
+         transform="matrix(0.5667404,0.1409609,-0.1437025,0.6737992,-625.35834,2111.1416)">
+        <path
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)"
+           sodipodi:nodetypes="ccccc"
+           id="path6467"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           style="opacity:0.71014494;fill:#84b3ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           style="opacity:0.36231887;fill:url(#linearGradient6569);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           id="path6469"
+           sodipodi:nodetypes="ccccc"
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         id="g6471"
+         transform="matrix(0.7343601,0,0,0.7343601,-922.39444,1887.2213)">
+        <path
+           style="fill:#ffff00;fill-rule:evenodd;stroke:#ffff00;stroke-width:2.20281816;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4239)"
+           d="M -1315.2186,137.16398 L -1381.8887,268.48381 L -1333.4013,242.21985 L -1387.9496,383.6412 L -1295.0156,230.09802 L -1347.5435,232.11832 L -1315.2186,137.16398 z"
+           id="path6473"
+           transform="matrix(1.0323118,0,0,0.7513378,732.51491,511.70199)" />
+        <path
+           id="path6475"
+           d="M -625.20077,614.75847 L -694.0251,713.42403 L -643.97099,693.69092 L -700.28184,799.94613 L -604.34498,684.58333 L -658.57015,686.10126 L -625.20077,614.75847 z"
+           style="fill:url(#linearGradient6571);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter3867)" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         id="g6477"
+         transform="matrix(0.7956616,0,0,0.7956616,-703.40664,1851.8865)">
+        <path
+           style="fill:#ffff00;fill-rule:evenodd;stroke:#ffff00;stroke-width:2.20281816;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4239)"
+           d="M -1315.2186,137.16398 L -1381.8887,268.48381 L -1333.4013,242.21985 L -1387.9496,383.6412 L -1295.0156,230.09802 L -1347.5435,232.11832 L -1315.2186,137.16398 z"
+           id="path6479"
+           transform="matrix(1.0323118,0,0,0.7513378,732.51491,511.70199)" />
+        <path
+           id="path6481"
+           d="M -625.20077,614.75847 L -694.0251,713.42403 L -643.97099,693.69092 L -700.28184,799.94613 L -604.34498,684.58333 L -658.57015,686.10126 L -625.20077,614.75847 z"
+           style="fill:url(#linearGradient6573);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter3867)" />
+      </g>
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         sodipodi:nodetypes="cccccccccc"
+         id="path6483"
+         d="M -1444.0637,2246.8299 C -1440.1805,2214.8641 -1407.3053,2195.0714 -1366.8911,2209.3158 C -1360.7349,2195.099 -1299.9108,2178.9816 -1256.1014,2204.4383 C -1229.4221,2188.5544 -1169.5537,2207.0845 -1165.7968,2233.6733 C -1136.7625,2243.64 -1121.3599,2282.4301 -1141.8803,2315.217 C -1119.4215,2345.8888 -1161.4592,2381.0199 -1189.3574,2378.8566 C -1204.2831,2399.0316 -1233.1323,2422.2917 -1287.3422,2402.0901 C -1347.2167,2428.4306 -1392.7275,2405.5652 -1398.459,2389.9682 C -1433.6414,2387.9056 -1453.0411,2372.2214 -1455.0276,2340.4708 C -1480.8442,2317.8101 -1481.6835,2255.2548 -1444.0637,2246.8299 z"
+         style="opacity:0.92400004;fill:#7d7d7d;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4055)" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         style="opacity:0.81884054;fill:url(#linearGradient6575);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter3658)"
+         d="M -1442.0637,2244.8299 C -1438.1805,2212.8641 -1405.3053,2193.0714 -1364.8911,2207.3158 C -1358.7349,2193.099 -1297.9108,2176.9816 -1254.1014,2202.4383 C -1227.4221,2186.5544 -1167.5537,2205.0845 -1163.7968,2231.6733 C -1134.7625,2241.64 -1119.3599,2280.4301 -1139.8803,2313.217 C -1117.4215,2343.8888 -1159.4592,2379.0199 -1187.3574,2376.8566 C -1202.2831,2397.0316 -1231.1323,2420.2917 -1285.3422,2400.0901 C -1345.2167,2426.4306 -1390.7275,2403.5652 -1396.459,2387.9682 C -1431.6414,2385.9056 -1451.0411,2370.2214 -1453.0276,2338.4708 C -1478.8442,2315.8101 -1479.6835,2253.2548 -1442.0637,2244.8299 z"
+         id="path6485"
+         sodipodi:nodetypes="cccccccccc" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         sodipodi:nodetypes="cc"
+         id="path6487"
+         d="M -1256.0275,2204.1002 C -1232.6298,2212.7661 -1223.7808,2228.0392 -1223.1976,2242.486"
+         style="opacity:0.48600003;fill:none;fill-rule:evenodd;stroke:url(#linearGradient6577);stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4007)" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         style="opacity:0.48550726;fill:none;fill-rule:evenodd;stroke:url(#linearGradient6579);stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4023)"
+         d="M -1398.1821,2390.0497 C -1380.9828,2391.7084 -1369.1492,2383.9662 -1359.4727,2365.1067"
+         id="path6489"
+         sodipodi:nodetypes="cc" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         style="opacity:0.48550726;fill:none;fill-rule:evenodd;stroke:url(#linearGradient6581);stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4019)"
+         d="M -1141.3603,2313.83 C -1155.242,2334.5629 -1172.1571,2339.6077 -1186.3418,2336.807"
+         id="path6491"
+         sodipodi:nodetypes="cc" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         sodipodi:nodetypes="cc"
+         id="path6493"
+         d="M -1210.5768,2306.8093 C -1269.2238,2337.3819 -1319.6141,2334.2619 -1354.5425,2317.6054"
+         style="opacity:0.76099997;fill:none;fill-rule:evenodd;stroke:url(#linearGradient6583);stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4043)" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         style="opacity:0.48550726;fill:none;fill-rule:evenodd;stroke:url(#linearGradient6585);stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4027)"
+         d="M -1384.1395,2263.1371 C -1406.0129,2241.5805 -1428.3284,2240.0218 -1445.5333,2247.3071"
+         id="path6495"
+         sodipodi:nodetypes="cc" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         sodipodi:nodetypes="cc"
+         id="path6497"
+         d="M -1190.2645,2380.1098 C -1179.3602,2357.6676 -1183.5333,2340.5166 -1193.1045,2329.6795"
+         style="opacity:0.48550726;fill:none;fill-rule:evenodd;stroke:url(#linearGradient6587);stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4015)" />
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         id="g6499"
+         style="filter:url(#filter4113)"
+         transform="matrix(0.5667404,0.1409609,-0.1437025,0.6737992,-752.98074,2062.7152)">
+        <path
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)"
+           sodipodi:nodetypes="ccccc"
+           id="path6501"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           style="opacity:0.71014494;fill:#84b3ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           style="opacity:0.36231887;fill:url(#linearGradient6589);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           id="path6503"
+           sodipodi:nodetypes="ccccc"
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         transform="matrix(0.5667404,0.1409609,-0.1437025,0.6737992,-672.37054,2068.3721)"
+         style="filter:url(#filter4105)"
+         id="g6505">
+        <path
+           style="opacity:0.71014494;fill:#84b3ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           id="path6507"
+           sodipodi:nodetypes="ccccc"
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)" />
+        <path
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)"
+           sodipodi:nodetypes="ccccc"
+           id="path6509"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           style="opacity:0.36231887;fill:url(#linearGradient6591);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         id="g6511"
+         style="filter:url(#filter4085)"
+         transform="matrix(0.5667404,0.1409609,-0.1437025,0.6737992,-582.20404,2069.9284)">
+        <path
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)"
+           sodipodi:nodetypes="ccccc"
+           id="path6513"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           style="opacity:0.71014494;fill:#84b3ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           style="opacity:0.36231887;fill:url(#linearGradient6593);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           id="path6515"
+           sodipodi:nodetypes="ccccc"
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         transform="matrix(0.5667404,0.1409609,-0.1437025,0.6737992,-596.04464,2145.8107)"
+         style="filter:url(#filter4093)"
+         id="g6517">
+        <path
+           style="opacity:0.71014494;fill:#84b3ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           id="path6519"
+           sodipodi:nodetypes="ccccc"
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)" />
+        <path
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)"
+           sodipodi:nodetypes="ccccc"
+           id="path6521"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           style="opacity:0.36231887;fill:url(#linearGradient6595);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         id="g6523"
+         style="filter:url(#filter4117)"
+         transform="matrix(0.5667404,0.1409609,-0.1437025,0.6737992,-762.15234,2139.0828)">
+        <path
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)"
+           sodipodi:nodetypes="ccccc"
+           id="path6525"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           style="opacity:0.71014494;fill:#84b3ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           style="opacity:0.36231887;fill:url(#linearGradient6597);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           id="path6527"
+           sodipodi:nodetypes="ccccc"
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         transform="matrix(0.5667404,0.1409609,-0.1437025,0.6737992,-691.68424,2141.9112)"
+         style="filter:url(#filter4101)"
+         id="g6529">
+        <path
+           style="opacity:0.71014494;fill:#84b3ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           id="path6531"
+           sodipodi:nodetypes="ccccc"
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)" />
+        <path
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)"
+           sodipodi:nodetypes="ccccc"
+           id="path6533"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           style="opacity:0.36231887;fill:url(#linearGradient6599);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/daten/PROJEKTE/weather_icons/03_severe_thunderstorms.png"
+         id="g6535"
+         style="filter:url(#filter4089)"
+         transform="matrix(0.5667404,0.1409609,-0.1437025,0.6737992,-549.37554,2104.7985)">
+        <path
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)"
+           sodipodi:nodetypes="ccccc"
+           id="path6537"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           style="opacity:0.71014494;fill:#84b3ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           style="opacity:0.36231887;fill:url(#linearGradient6601);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M -824.02082,678.07969 C -818.95578,689.1589 -812.02684,697.44229 -809.47488,712.29112 C -809.16329,723.67847 -814.16428,732.21211 -823.35355,734.53375 C -834.51628,733.4304 -837.73701,723.09701 -837.58579,712.35178 C -835.98271,697.64435 -829.04162,688.94218 -824.02082,678.07969 z"
+           id="path6539"
+           sodipodi:nodetypes="ccccc"
+           transform="matrix(1.3198418,-1.1233226e-2,1.1035633e-2,1.2966272,105.33765,-264.55843)" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -2,8 +2,8 @@
 
 # Form implementation generated from reading ui file '../ui/configForm.ui'
 #
-# Created: Mon Jan 18 11:47:35 2010
-#      by: PyQt4 UI code generator 4.6.2
+# Created: Mon Feb 22 21:26:47 2010
+#      by: PyQt4 UI code generator 4.7
 #
 # WARNING! All changes made in this file will be lost!
 
