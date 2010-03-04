@@ -31,6 +31,10 @@ class Weather:
         self.location = wi.general["location"]
         
         xmlUnit = wi.general["unit"]
+        if xmlUnit == "US":
+            xmlUnit = "Imperial"
+        else:
+            xmlUnit - "Metric"
         
         if reqUnit == "Metric":
             self.current_temperature = wi.current_condition["temp_c"] + " " + self._degree_symbol + "C"

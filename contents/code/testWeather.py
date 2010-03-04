@@ -7,5 +7,6 @@ wi = WeatherInfo()
 wi.parse("Munich,Germany")
  
 weather = Weather()
-weather.extractData(wi,"Metric")
+#weather.extractData(wi,"Metric")
+weather.extractData(wi,"Imperial")
 weather.show()
