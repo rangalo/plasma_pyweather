@@ -19,7 +19,7 @@ class Weather:
         return str(int( round ((int(temp_in_f) - 32) * 5 / 9.0, 0))) + " " + self._degree_symbol + "C"
  
     def _fromSItoUS(self,temp_in_c):
-        return str(int(round((int(temp_in_c) * 9 / 5.0) + 32, 0)) ) + " " + self._degree_symbol + "F"
+        return str(int(round((int(temp_in_c) * (9.0 / 5.0)) + 32, 0)) ) + " " + self._degree_symbol + "F"
         
     def _fromMilesToKms(self,dist_in_miles):
         return round(1.61 * dist_in_miles,1)
